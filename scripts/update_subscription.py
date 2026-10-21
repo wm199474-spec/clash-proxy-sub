@@ -2,6 +2,7 @@
 """Convert the public proxy list to a complete Clash subscription (stdlib only)."""
 
 import argparse
+from datetime import datetime, timezone
 import ipaddress
 import json
 import os
@@ -13,6 +14,8 @@ import time
 from urllib.error import URLError
 from urllib.parse import unquote, urlsplit
 from urllib.request import Request, urlopen
+
+from health_check import HealthPolicy, filter_healthy
 
 
 DEFAULT_SOURCE = (
@@ -143,24 +146,53 @@ def main():
     source.add_argument("--input", type=Path, help="改为读取本地 TXT 文件")
     parser.add_argument("--output", type=Path, default=ROOT / "clash.yaml")
     parser.add_argument("--snapshot", type=Path, default=ROOT / "proxy.txt")
+    parser.add_argument("--report", type=Path, default=ROOT / "health-check.json")
     args = parser.parse_args()
 
+    report_written = False
+    destinations_valid = False
+    stage = "paths"
     try:
-        if args.output.resolve() == args.snapshot.resolve():
-            raise ValueError("配置文件与源列表快照不能使用同一路径")
+        destinations = {path.resolve() for path in (args.output, args.snapshot, args.report)}
+        if len(destinations) != 3:
+            raise ValueError("配置文件、源列表快照与检测报告不能使用同一路径")
+        destinations_valid = True
+        stage = "source"
         text = args.input.read_text(encoding="utf-8-sig") if args.input else download_text(args.source)
+        stage = "parse"
         proxies, total = parse_proxies(text)
         if not proxies:
             raise ValueError("没有可转换的完整代理地址，保留上一份订阅")
+        candidate_count = len(proxies)
+        print(f"开始真实代理检测：{candidate_count} 个候选，每节点两个 HTTPS 目标各测 3 次及小文件下载", flush=True)
+        stage = "health_check"
+        proxies, report = filter_healthy(proxies, HealthPolicy())
+        report["status"] = "passed" if proxies else "failed"
+        report["source_records"] = total
+        report["invalid_or_duplicate"] = total - candidate_count
+        atomic_write(args.report, json.dumps(report, ensure_ascii=False, indent=2) + "\n")
+        report_written = True
+        for node in report["nodes"]:
+            print(f"{'通过' if node['passed'] else '过滤'} {node['name']}：{node['reason']}", flush=True)
+        if not proxies:
+            raise ValueError("没有节点通过质量检测，保留上一份订阅；原因见检测报告")
+        stage = "save"
         # JSON documents are also valid YAML; no third-party serializer is needed.
         config = json.dumps(make_config(proxies), ensure_ascii=False, indent=2) + "\n"
         atomic_write(args.snapshot, text)
         atomic_write(args.output, config)
     except (OSError, ValueError, URLError) as error:
+        if destinations_valid and not report_written:
+            failure = {"checked_at": datetime.now(timezone.utc).isoformat(), "status": "failed",
+                       "stage": stage, "error": str(error)}
+            try:
+                atomic_write(args.report, json.dumps(failure, ensure_ascii=False, indent=2) + "\n")
+            except OSError as report_error:
+                print(f"检测报告保存失败：{report_error}", file=sys.stderr)
         print(f"更新失败：{error}", file=sys.stderr)
         return 1
 
-    print(f"源列表 {total} 条，生成 {len(proxies)} 个节点，跳过 {total - len(proxies)} 条无效或重复记录")
+    print(f"源列表 {total} 条，完整候选 {candidate_count} 个，质量通过 {len(proxies)} 个，质量过滤 {candidate_count - len(proxies)} 个")
     print(f"配置已写入：{args.output}")
     return 0
 
