@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-21T18:41:27.358808+00:00",
+  "checked_at": "2026-10-21T22:23:53.077819+00:00",
   "policy": {
     "rounds": 3,
     "workers": 8,
@@ -14,36 +14,14 @@
     "cloudflare": "https://www.cloudflare.com/cdn-cgi/trace"
   },
   "download_url": "https://speed.cloudflare.com/__down?bytes=262144",
-  "candidate_count": 26,
-  "passed": 7,
-  "rejected": 19,
+  "candidate_count": 16,
+  "passed": 9,
+  "rejected": 7,
   "nodes": [
     {
-      "name": "[机房] 孟加拉国 达卡专区 达卡 | SOCKS5 | 185.207.154.238:1080",
-      "server": "185.207.154.238",
-      "port": 1080,
-      "passed": false,
-      "successes": 0,
-      "attempts": 1,
-      "samples": [
-        {
-          "target": "google",
-          "ok": false,
-          "http": 0,
-          "proxy_http": 0,
-          "seconds": 0.1911,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 7,
-          "reason": "proxy_or_tls_connection"
-        }
-      ],
-      "reason": "proxy_or_tls_connection"
-    },
-    {
-      "name": "[机房] 日本 东京都 东京 | SOCKS5 | 175.171.64.128:1081",
-      "server": "175.171.64.128",
-      "port": 1081,
+      "name": "[机房] 德国 黑森州 法兰克福 — Linode | SOCKS5 | 172.104.236.53:10808",
+      "server": "172.104.236.53",
+      "port": 10808,
       "passed": true,
       "successes": 6,
       "attempts": 6,
@@ -53,7 +31,7 @@
           "ok": true,
           "http": 204,
           "proxy_http": 0,
-          "seconds": 2.4287,
+          "seconds": 0.6933,
           "bytes": 0,
           "kib_per_second": 0.0,
           "curl_exit": 0,
@@ -64,9 +42,9 @@
           "ok": true,
           "http": 200,
           "proxy_http": 0,
-          "seconds": 2.5353,
-          "bytes": 207,
-          "kib_per_second": 0.08,
+          "seconds": 0.6765,
+          "bytes": 224,
+          "kib_per_second": 0.32,
           "curl_exit": 0,
           "reason": "passed"
         },
@@ -75,7 +53,7 @@
           "ok": true,
           "http": 204,
           "proxy_http": 0,
-          "seconds": 2.7058,
+          "seconds": 0.6804,
           "bytes": 0,
           "kib_per_second": 0.0,
           "curl_exit": 0,
@@ -86,9 +64,9 @@
           "ok": true,
           "http": 200,
           "proxy_http": 0,
-          "seconds": 2.4063,
-          "bytes": 212,
-          "kib_per_second": 0.09,
+          "seconds": 0.6804,
+          "bytes": 229,
+          "kib_per_second": 0.33,
           "curl_exit": 0,
           "reason": "passed"
         },
@@ -97,7 +75,7 @@
           "ok": true,
           "http": 204,
           "proxy_http": 0,
-          "seconds": 2.4695,
+          "seconds": 0.683,
           "bytes": 0,
           "kib_per_second": 0.0,
           "curl_exit": 0,
@@ -108,109 +86,31 @@
           "ok": true,
           "http": 200,
           "proxy_http": 0,
-          "seconds": 2.4112,
-          "bytes": 207,
-          "kib_per_second": 0.08,
+          "seconds": 0.6866,
+          "bytes": 228,
+          "kib_per_second": 0.32,
           "curl_exit": 0,
           "reason": "passed"
         }
       ],
-      "average_seconds": 2.4928,
+      "average_seconds": 0.6834,
       "download": {
         "target": "download",
         "ok": true,
         "http": 200,
         "proxy_http": 0,
-        "seconds": 3.5073,
+        "seconds": 1.2599,
         "bytes": 262144,
-        "kib_per_second": 72.99,
+        "kib_per_second": 203.19,
         "curl_exit": 0,
         "reason": "passed"
       },
       "reason": "passed"
     },
     {
-      "name": "[机房] [原生IP] 中国 香港 香港 | SOCKS5 | 193.134.210.148:1080",
-      "server": "193.134.210.148",
-      "port": 1080,
-      "passed": false,
-      "successes": 6,
-      "attempts": 6,
-      "samples": [
-        {
-          "target": "google",
-          "ok": true,
-          "http": 204,
-          "proxy_http": 0,
-          "seconds": 2.6598,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "cloudflare",
-          "ok": true,
-          "http": 200,
-          "proxy_http": 0,
-          "seconds": 2.3435,
-          "bytes": 213,
-          "kib_per_second": 0.09,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "google",
-          "ok": true,
-          "http": 204,
-          "proxy_http": 0,
-          "seconds": 3.8887,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "cloudflare",
-          "ok": true,
-          "http": 200,
-          "proxy_http": 0,
-          "seconds": 2.5772,
-          "bytes": 214,
-          "kib_per_second": 0.08,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "google",
-          "ok": true,
-          "http": 204,
-          "proxy_http": 0,
-          "seconds": 2.2243,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "cloudflare",
-          "ok": true,
-          "http": 200,
-          "proxy_http": 0,
-          "seconds": 1.5392,
-          "bytes": 214,
-          "kib_per_second": 0.14,
-          "curl_exit": 0,
-          "reason": "passed"
-        }
-      ],
-      "average_seconds": 2.5388,
-      "reason": "high_latency"
-    },
-    {
-      "name": "[机房] 美国 加利福尼亚州 洛杉矶 — 搬瓦工 | SOCKS5 | 183.45.77.138:1080",
-      "server": "183.45.77.138",
-      "port": 1080,
+      "name": "[机房] 越南 承天顺化省 顺化 | SOCKS5 | 116.98.63.128:5001",
+      "server": "116.98.63.128",
+      "port": 5001,
       "passed": true,
       "successes": 6,
       "attempts": 6,
@@ -220,7 +120,7 @@
           "ok": true,
           "http": 204,
           "proxy_http": 0,
-          "seconds": 1.5724,
+          "seconds": 1.18,
           "bytes": 0,
           "kib_per_second": 0.0,
           "curl_exit": 0,
@@ -231,97 +131,8 @@
           "ok": true,
           "http": 200,
           "proxy_http": 0,
-          "seconds": 1.5732,
-          "bytes": 208,
-          "kib_per_second": 0.13,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "google",
-          "ok": true,
-          "http": 204,
-          "proxy_http": 0,
-          "seconds": 1.6012,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "cloudflare",
-          "ok": true,
-          "http": 200,
-          "proxy_http": 0,
-          "seconds": 1.561,
-          "bytes": 213,
-          "kib_per_second": 0.13,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "google",
-          "ok": true,
-          "http": 204,
-          "proxy_http": 0,
-          "seconds": 1.5647,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "cloudflare",
-          "ok": true,
-          "http": 200,
-          "proxy_http": 0,
-          "seconds": 1.5808,
-          "bytes": 213,
-          "kib_per_second": 0.13,
-          "curl_exit": 0,
-          "reason": "passed"
-        }
-      ],
-      "average_seconds": 1.5756,
-      "download": {
-        "target": "download",
-        "ok": true,
-        "http": 200,
-        "proxy_http": 0,
-        "seconds": 2.5283,
-        "bytes": 262144,
-        "kib_per_second": 101.25,
-        "curl_exit": 0,
-        "reason": "passed"
-      },
-      "reason": "passed"
-    },
-    {
-      "name": "[机房] 俄罗斯 莫斯科 莫斯科 — Ruvds | SOCKS5 | 194.169.163.56:1080",
-      "server": "194.169.163.56",
-      "port": 1080,
-      "passed": true,
-      "successes": 6,
-      "attempts": 6,
-      "samples": [
-        {
-          "target": "google",
-          "ok": true,
-          "http": 204,
-          "proxy_http": 0,
-          "seconds": 0.8235,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "cloudflare",
-          "ok": true,
-          "http": 200,
-          "proxy_http": 0,
-          "seconds": 1.0668,
-          "bytes": 208,
+          "seconds": 1.109,
+          "bytes": 211,
           "kib_per_second": 0.19,
           "curl_exit": 0,
           "reason": "passed"
@@ -331,7 +142,7 @@
           "ok": true,
           "http": 204,
           "proxy_http": 0,
-          "seconds": 0.7985,
+          "seconds": 1.2118,
           "bytes": 0,
           "kib_per_second": 0.0,
           "curl_exit": 0,
@@ -342,207 +153,8 @@
           "ok": true,
           "http": 200,
           "proxy_http": 0,
-          "seconds": 0.8923,
-          "bytes": 208,
-          "kib_per_second": 0.23,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "google",
-          "ok": true,
-          "http": 204,
-          "proxy_http": 0,
-          "seconds": 0.8747,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "cloudflare",
-          "ok": true,
-          "http": 200,
-          "proxy_http": 0,
-          "seconds": 0.8981,
-          "bytes": 212,
-          "kib_per_second": 0.23,
-          "curl_exit": 0,
-          "reason": "passed"
-        }
-      ],
-      "average_seconds": 0.8923,
-      "download": {
-        "target": "download",
-        "ok": true,
-        "http": 200,
-        "proxy_http": 0,
-        "seconds": 1.589,
-        "bytes": 262144,
-        "kib_per_second": 161.11,
-        "curl_exit": 0,
-        "reason": "passed"
-      },
-      "reason": "passed"
-    },
-    {
-      "name": "[机房] 美国 加利福尼亚州 洛杉矶 — 搬瓦工 | SOCKS5 | 113.205.219.168:10808",
-      "server": "113.205.219.168",
-      "port": 10808,
-      "passed": false,
-      "successes": 2,
-      "attempts": 3,
-      "samples": [
-        {
-          "target": "google",
-          "ok": true,
-          "http": 204,
-          "proxy_http": 0,
-          "seconds": 4.9884,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "cloudflare",
-          "ok": true,
-          "http": 200,
-          "proxy_http": 0,
-          "seconds": 4.6618,
-          "bytes": 220,
-          "kib_per_second": 0.05,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "google",
-          "ok": false,
-          "http": 0,
-          "proxy_http": 0,
-          "seconds": 4.0005,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 28,
-          "reason": "timeout"
-        }
-      ],
-      "reason": "timeout"
-    },
-    {
-      "name": "[机房] 荷兰 北荷兰省 阿姆斯特丹 — DigitalOcean | SOCKS5 | 161.35.154.84:1080",
-      "server": "161.35.154.84",
-      "port": 1080,
-      "passed": false,
-      "successes": 0,
-      "attempts": 1,
-      "samples": [
-        {
-          "target": "google",
-          "ok": false,
-          "http": 0,
-          "proxy_http": 0,
-          "seconds": 4.002,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 28,
-          "reason": "timeout"
-        }
-      ],
-      "reason": "timeout"
-    },
-    {
-      "name": "[机房] 中国 香港 香港 — 亚马逊云 Aws | SOCKS5 | 38.190.196.127:5555",
-      "server": "38.190.196.127",
-      "port": 5555,
-      "passed": false,
-      "successes": 0,
-      "attempts": 1,
-      "samples": [
-        {
-          "target": "google",
-          "ok": false,
-          "http": 0,
-          "proxy_http": 0,
-          "seconds": 4.0023,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 28,
-          "reason": "timeout"
-        }
-      ],
-      "reason": "timeout"
-    },
-    {
-      "name": "[机房] 德国 黑森州 法兰克福 | SOCKS5 | 193.58.121.36:1080",
-      "server": "193.58.121.36",
-      "port": 1080,
-      "passed": false,
-      "successes": 0,
-      "attempts": 1,
-      "samples": [
-        {
-          "target": "google",
-          "ok": false,
-          "http": 0,
-          "proxy_http": 0,
-          "seconds": 4.0024,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 28,
-          "reason": "timeout"
-        }
-      ],
-      "reason": "timeout"
-    },
-    {
-      "name": "[机房] 俄罗斯 斯维尔德洛夫斯克州 谢罗夫 | HTTP | 188.168.199.109:8084",
-      "server": "188.168.199.109",
-      "port": 8084,
-      "passed": false,
-      "successes": 0,
-      "attempts": 1,
-      "samples": [
-        {
-          "target": "google",
-          "ok": false,
-          "http": 0,
-          "proxy_http": 0,
-          "seconds": 4.0027,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 28,
-          "reason": "timeout"
-        }
-      ],
-      "reason": "timeout"
-    },
-    {
-      "name": "[机房] 印度 德里 德里 | HTTP | 103.168.210.122:80",
-      "server": "103.168.210.122",
-      "port": 80,
-      "passed": true,
-      "successes": 6,
-      "attempts": 6,
-      "samples": [
-        {
-          "target": "google",
-          "ok": true,
-          "http": 204,
-          "proxy_http": 200,
-          "seconds": 1.0341,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "cloudflare",
-          "ok": true,
-          "http": 200,
-          "proxy_http": 200,
-          "seconds": 1.2079,
-          "bytes": 215,
+          "seconds": 1.2051,
+          "bytes": 211,
           "kib_per_second": 0.17,
           "curl_exit": 0,
           "reason": "passed"
@@ -551,8 +163,8 @@
           "target": "google",
           "ok": true,
           "http": 204,
-          "proxy_http": 200,
-          "seconds": 1.3789,
+          "proxy_http": 0,
+          "seconds": 1.2156,
           "bytes": 0,
           "kib_per_second": 0.0,
           "curl_exit": 0,
@@ -562,54 +174,32 @@
           "target": "cloudflare",
           "ok": true,
           "http": 200,
-          "proxy_http": 200,
-          "seconds": 1.2665,
-          "bytes": 210,
-          "kib_per_second": 0.16,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "google",
-          "ok": true,
-          "http": 204,
-          "proxy_http": 200,
-          "seconds": 1.0149,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "cloudflare",
-          "ok": true,
-          "http": 200,
-          "proxy_http": 200,
-          "seconds": 1.3094,
-          "bytes": 208,
-          "kib_per_second": 0.15,
+          "proxy_http": 0,
+          "seconds": 1.1314,
+          "bytes": 206,
+          "kib_per_second": 0.18,
           "curl_exit": 0,
           "reason": "passed"
         }
       ],
-      "average_seconds": 1.2019,
+      "average_seconds": 1.1755,
       "download": {
         "target": "download",
         "ok": true,
         "http": 200,
-        "proxy_http": 200,
-        "seconds": 2.1087,
+        "proxy_http": 0,
+        "seconds": 2.0472,
         "bytes": 262144,
-        "kib_per_second": 121.4,
+        "kib_per_second": 125.05,
         "curl_exit": 0,
         "reason": "passed"
       },
       "reason": "passed"
     },
     {
-      "name": "[机房] 印度 北方邦 大诺伊达 | HTTP | 103.168.211.172:80",
-      "server": "103.168.211.172",
-      "port": 80,
+      "name": "[机房] 越南 承天顺化省 顺化 | SOCKS5 | 116.98.56.4:5001",
+      "server": "116.98.56.4",
+      "port": 5001,
       "passed": true,
       "successes": 6,
       "attempts": 6,
@@ -618,8 +208,8 @@
           "target": "google",
           "ok": true,
           "http": 204,
-          "proxy_http": 200,
-          "seconds": 1.2666,
+          "proxy_http": 0,
+          "seconds": 1.232,
           "bytes": 0,
           "kib_per_second": 0.0,
           "curl_exit": 0,
@@ -629,196 +219,7 @@
           "target": "cloudflare",
           "ok": true,
           "http": 200,
-          "proxy_http": 200,
-          "seconds": 2.1457,
-          "bytes": 208,
-          "kib_per_second": 0.09,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "google",
-          "ok": true,
-          "http": 204,
-          "proxy_http": 200,
-          "seconds": 1.3404,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "cloudflare",
-          "ok": true,
-          "http": 200,
-          "proxy_http": 200,
-          "seconds": 1.5548,
-          "bytes": 215,
-          "kib_per_second": 0.13,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "google",
-          "ok": true,
-          "http": 204,
-          "proxy_http": 200,
-          "seconds": 1.2303,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "cloudflare",
-          "ok": true,
-          "http": 200,
-          "proxy_http": 200,
-          "seconds": 3.5335,
-          "bytes": 210,
-          "kib_per_second": 0.06,
-          "curl_exit": 0,
-          "reason": "passed"
-        }
-      ],
-      "average_seconds": 1.8452,
-      "download": {
-        "target": "download",
-        "ok": true,
-        "http": 200,
-        "proxy_http": 200,
-        "seconds": 3.0689,
-        "bytes": 262144,
-        "kib_per_second": 83.42,
-        "curl_exit": 0,
-        "reason": "passed"
-      },
-      "reason": "passed"
-    },
-    {
-      "name": "[机房] [原生IP] 菲律宾 国家首都区 马卡蒂市 | HTTP | 203.9.195.78:9000",
-      "server": "203.9.195.78",
-      "port": 9000,
-      "passed": false,
-      "successes": 6,
-      "attempts": 6,
-      "samples": [
-        {
-          "target": "google",
-          "ok": true,
-          "http": 204,
-          "proxy_http": 200,
-          "seconds": 3.2318,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "cloudflare",
-          "ok": true,
-          "http": 200,
-          "proxy_http": 200,
-          "seconds": 2.7635,
-          "bytes": 210,
-          "kib_per_second": 0.07,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "google",
-          "ok": true,
-          "http": 204,
-          "proxy_http": 200,
-          "seconds": 2.5763,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "cloudflare",
-          "ok": true,
-          "http": 200,
-          "proxy_http": 200,
-          "seconds": 2.3496,
-          "bytes": 211,
-          "kib_per_second": 0.09,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "google",
-          "ok": true,
-          "http": 204,
-          "proxy_http": 200,
-          "seconds": 2.5113,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "cloudflare",
-          "ok": true,
-          "http": 200,
-          "proxy_http": 200,
-          "seconds": 2.7968,
-          "bytes": 206,
-          "kib_per_second": 0.07,
-          "curl_exit": 0,
-          "reason": "passed"
-        }
-      ],
-      "average_seconds": 2.7049,
-      "reason": "high_latency"
-    },
-    {
-      "name": "[机房] [原生IP] 菲律宾 国家首都区 马卡蒂市 | HTTP | 203.9.195.102:9000",
-      "server": "203.9.195.102",
-      "port": 9000,
-      "passed": true,
-      "successes": 6,
-      "attempts": 6,
-      "samples": [
-        {
-          "target": "google",
-          "ok": true,
-          "http": 204,
-          "proxy_http": 200,
-          "seconds": 1.2613,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "cloudflare",
-          "ok": true,
-          "http": 200,
-          "proxy_http": 200,
-          "seconds": 1.2635,
-          "bytes": 206,
-          "kib_per_second": 0.16,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "google",
-          "ok": true,
-          "http": 204,
-          "proxy_http": 200,
-          "seconds": 1.3308,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "cloudflare",
-          "ok": true,
-          "http": 200,
-          "proxy_http": 200,
+          "proxy_http": 0,
           "seconds": 1.1507,
           "bytes": 211,
           "kib_per_second": 0.18,
@@ -829,8 +230,8 @@
           "target": "google",
           "ok": true,
           "http": 204,
-          "proxy_http": 200,
-          "seconds": 1.3356,
+          "proxy_http": 0,
+          "seconds": 1.1872,
           "bytes": 0,
           "kib_per_second": 0.0,
           "curl_exit": 0,
@@ -840,143 +241,54 @@
           "target": "cloudflare",
           "ok": true,
           "http": 200,
-          "proxy_http": 200,
-          "seconds": 1.1386,
-          "bytes": 211,
+          "proxy_http": 0,
+          "seconds": 1.1631,
+          "bytes": 212,
           "kib_per_second": 0.18,
+          "curl_exit": 0,
+          "reason": "passed"
+        },
+        {
+          "target": "google",
+          "ok": true,
+          "http": 204,
+          "proxy_http": 0,
+          "seconds": 1.1338,
+          "bytes": 0,
+          "kib_per_second": 0.0,
+          "curl_exit": 0,
+          "reason": "passed"
+        },
+        {
+          "target": "cloudflare",
+          "ok": true,
+          "http": 200,
+          "proxy_http": 0,
+          "seconds": 1.1514,
+          "bytes": 207,
+          "kib_per_second": 0.17,
           "curl_exit": 0,
           "reason": "passed"
         }
       ],
-      "average_seconds": 1.2468,
+      "average_seconds": 1.1697,
       "download": {
         "target": "download",
         "ok": true,
         "http": 200,
-        "proxy_http": 200,
-        "seconds": 2.0358,
+        "proxy_http": 0,
+        "seconds": 2.1183,
         "bytes": 262144,
-        "kib_per_second": 125.75,
+        "kib_per_second": 120.85,
         "curl_exit": 0,
         "reason": "passed"
       },
       "reason": "passed"
     },
     {
-      "name": "[机房] [原生IP] 菲律宾 国家首都区 马卡蒂市 | HTTP | 203.9.195.4:9000",
-      "server": "203.9.195.4",
-      "port": 9000,
-      "passed": false,
-      "successes": 6,
-      "attempts": 6,
-      "samples": [
-        {
-          "target": "google",
-          "ok": true,
-          "http": 204,
-          "proxy_http": 200,
-          "seconds": 2.3217,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "cloudflare",
-          "ok": true,
-          "http": 200,
-          "proxy_http": 200,
-          "seconds": 2.3182,
-          "bytes": 210,
-          "kib_per_second": 0.09,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "google",
-          "ok": true,
-          "http": 204,
-          "proxy_http": 200,
-          "seconds": 2.3622,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "cloudflare",
-          "ok": true,
-          "http": 200,
-          "proxy_http": 200,
-          "seconds": 2.8873,
-          "bytes": 204,
-          "kib_per_second": 0.07,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "google",
-          "ok": true,
-          "http": 204,
-          "proxy_http": 200,
-          "seconds": 2.9765,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "cloudflare",
-          "ok": true,
-          "http": 200,
-          "proxy_http": 200,
-          "seconds": 2.4288,
-          "bytes": 211,
-          "kib_per_second": 0.08,
-          "curl_exit": 0,
-          "reason": "passed"
-        }
-      ],
-      "average_seconds": 2.5491,
-      "reason": "high_latency"
-    },
-    {
-      "name": "[机房] 美国 加利福尼亚州 洛杉矶 | HTTP | 88.210.37.30:3128",
-      "server": "88.210.37.30",
-      "port": 3128,
-      "passed": false,
-      "successes": 1,
-      "attempts": 2,
-      "samples": [
-        {
-          "target": "google",
-          "ok": true,
-          "http": 204,
-          "proxy_http": 200,
-          "seconds": 4.1826,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 0,
-          "reason": "passed"
-        },
-        {
-          "target": "cloudflare",
-          "ok": false,
-          "http": 0,
-          "proxy_http": 200,
-          "seconds": 4.001,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 28,
-          "reason": "timeout"
-        }
-      ],
-      "reason": "timeout"
-    },
-    {
-      "name": "[机房] [原生IP] 美国 加利福尼亚州 弗里蒙特 | HTTP | 23.177.184.175:3128",
-      "server": "23.177.184.175",
-      "port": 3128,
+      "name": "[机房] 越南 承天顺化省 顺化 | SOCKS5 | 116.98.60.207:5001",
+      "server": "116.98.60.207",
+      "port": 5001,
       "passed": true,
       "successes": 6,
       "attempts": 6,
@@ -985,8 +297,8 @@
           "target": "google",
           "ok": true,
           "http": 204,
-          "proxy_http": 200,
-          "seconds": 0.2386,
+          "proxy_http": 0,
+          "seconds": 1.1099,
           "bytes": 0,
           "kib_per_second": 0.0,
           "curl_exit": 0,
@@ -996,10 +308,10 @@
           "target": "cloudflare",
           "ok": true,
           "http": 200,
-          "proxy_http": 200,
-          "seconds": 0.5667,
-          "bytes": 210,
-          "kib_per_second": 0.36,
+          "proxy_http": 0,
+          "seconds": 1.1035,
+          "bytes": 207,
+          "kib_per_second": 0.18,
           "curl_exit": 0,
           "reason": "passed"
         },
@@ -1007,8 +319,8 @@
           "target": "google",
           "ok": true,
           "http": 204,
-          "proxy_http": 200,
-          "seconds": 0.2189,
+          "proxy_http": 0,
+          "seconds": 1.2699,
           "bytes": 0,
           "kib_per_second": 0.0,
           "curl_exit": 0,
@@ -1018,10 +330,10 @@
           "target": "cloudflare",
           "ok": true,
           "http": 200,
-          "proxy_http": 200,
-          "seconds": 0.2755,
-          "bytes": 216,
-          "kib_per_second": 0.76,
+          "proxy_http": 0,
+          "seconds": 1.1864,
+          "bytes": 211,
+          "kib_per_second": 0.17,
           "curl_exit": 0,
           "reason": "passed"
         },
@@ -1029,8 +341,8 @@
           "target": "google",
           "ok": true,
           "http": 204,
-          "proxy_http": 200,
-          "seconds": 0.4713,
+          "proxy_http": 0,
+          "seconds": 1.1498,
           "bytes": 0,
           "kib_per_second": 0.0,
           "curl_exit": 0,
@@ -1040,33 +352,33 @@
           "target": "cloudflare",
           "ok": true,
           "http": 200,
-          "proxy_http": 200,
-          "seconds": 0.2637,
-          "bytes": 210,
-          "kib_per_second": 0.78,
+          "proxy_http": 0,
+          "seconds": 1.1443,
+          "bytes": 206,
+          "kib_per_second": 0.18,
           "curl_exit": 0,
           "reason": "passed"
         }
       ],
-      "average_seconds": 0.3391,
+      "average_seconds": 1.1606,
       "download": {
         "target": "download",
         "ok": true,
         "http": 200,
-        "proxy_http": 200,
-        "seconds": 0.9556,
+        "proxy_http": 0,
+        "seconds": 2.0385,
         "bytes": 262144,
-        "kib_per_second": 267.89,
+        "kib_per_second": 125.58,
         "curl_exit": 0,
         "reason": "passed"
       },
       "reason": "passed"
     },
     {
-      "name": "[机房] 澳大利亚 维多利亚州 墨尔本 | HTTP | 103.192.80.81:3129",
-      "server": "103.192.80.81",
-      "port": 3129,
-      "passed": false,
+      "name": "[机房] 越南 承天顺化省 顺化 | SOCKS5 | 116.98.117.15:5001",
+      "server": "116.98.117.15",
+      "port": 5001,
+      "passed": true,
       "successes": 6,
       "attempts": 6,
       "samples": [
@@ -1074,8 +386,8 @@
           "target": "google",
           "ok": true,
           "http": 204,
-          "proxy_http": 200,
-          "seconds": 0.8749,
+          "proxy_http": 0,
+          "seconds": 1.2768,
           "bytes": 0,
           "kib_per_second": 0.0,
           "curl_exit": 0,
@@ -1085,10 +397,10 @@
           "target": "cloudflare",
           "ok": true,
           "http": 200,
-          "proxy_http": 200,
-          "seconds": 0.7682,
-          "bytes": 211,
-          "kib_per_second": 0.27,
+          "proxy_http": 0,
+          "seconds": 1.1928,
+          "bytes": 212,
+          "kib_per_second": 0.17,
           "curl_exit": 0,
           "reason": "passed"
         },
@@ -1096,8 +408,8 @@
           "target": "google",
           "ok": true,
           "http": 204,
-          "proxy_http": 200,
-          "seconds": 0.8605,
+          "proxy_http": 0,
+          "seconds": 1.1951,
           "bytes": 0,
           "kib_per_second": 0.0,
           "curl_exit": 0,
@@ -1107,10 +419,10 @@
           "target": "cloudflare",
           "ok": true,
           "http": 200,
-          "proxy_http": 200,
-          "seconds": 0.7511,
+          "proxy_http": 0,
+          "seconds": 1.1321,
           "bytes": 211,
-          "kib_per_second": 0.27,
+          "kib_per_second": 0.18,
           "curl_exit": 0,
           "reason": "passed"
         },
@@ -1118,8 +430,8 @@
           "target": "google",
           "ok": true,
           "http": 204,
-          "proxy_http": 200,
-          "seconds": 0.8592,
+          "proxy_http": 0,
+          "seconds": 1.2509,
           "bytes": 0,
           "kib_per_second": 0.0,
           "curl_exit": 0,
@@ -1129,32 +441,210 @@
           "target": "cloudflare",
           "ok": true,
           "http": 200,
-          "proxy_http": 200,
-          "seconds": 0.7556,
+          "proxy_http": 0,
+          "seconds": 1.1148,
           "bytes": 211,
-          "kib_per_second": 0.27,
+          "kib_per_second": 0.18,
           "curl_exit": 0,
           "reason": "passed"
         }
       ],
-      "average_seconds": 0.8116,
+      "average_seconds": 1.1937,
       "download": {
         "target": "download",
-        "ok": false,
+        "ok": true,
         "http": 200,
-        "proxy_http": 200,
-        "seconds": 8.3665,
+        "proxy_http": 0,
+        "seconds": 2.1915,
         "bytes": 262144,
-        "kib_per_second": 30.6,
+        "kib_per_second": 116.81,
         "curl_exit": 0,
-        "reason": "slow_download"
+        "reason": "passed"
       },
-      "reason": "slow_download"
+      "reason": "passed"
     },
     {
-      "name": "[机房] 意大利 伦巴第大区 米兰 | HTTPS | 66.163.119.84:443",
-      "server": "66.163.119.84",
-      "port": 443,
+      "name": "[机房] 越南 承天顺化省 顺化 | SOCKS5 | 116.98.117.182:5001",
+      "server": "116.98.117.182",
+      "port": 5001,
+      "passed": true,
+      "successes": 6,
+      "attempts": 6,
+      "samples": [
+        {
+          "target": "google",
+          "ok": true,
+          "http": 204,
+          "proxy_http": 0,
+          "seconds": 1.1931,
+          "bytes": 0,
+          "kib_per_second": 0.0,
+          "curl_exit": 0,
+          "reason": "passed"
+        },
+        {
+          "target": "cloudflare",
+          "ok": true,
+          "http": 200,
+          "proxy_http": 0,
+          "seconds": 1.1606,
+          "bytes": 207,
+          "kib_per_second": 0.17,
+          "curl_exit": 0,
+          "reason": "passed"
+        },
+        {
+          "target": "google",
+          "ok": true,
+          "http": 204,
+          "proxy_http": 0,
+          "seconds": 1.2454,
+          "bytes": 0,
+          "kib_per_second": 0.0,
+          "curl_exit": 0,
+          "reason": "passed"
+        },
+        {
+          "target": "cloudflare",
+          "ok": true,
+          "http": 200,
+          "proxy_http": 0,
+          "seconds": 1.1784,
+          "bytes": 207,
+          "kib_per_second": 0.17,
+          "curl_exit": 0,
+          "reason": "passed"
+        },
+        {
+          "target": "google",
+          "ok": true,
+          "http": 204,
+          "proxy_http": 0,
+          "seconds": 1.1967,
+          "bytes": 0,
+          "kib_per_second": 0.0,
+          "curl_exit": 0,
+          "reason": "passed"
+        },
+        {
+          "target": "cloudflare",
+          "ok": true,
+          "http": 200,
+          "proxy_http": 0,
+          "seconds": 1.1577,
+          "bytes": 205,
+          "kib_per_second": 0.17,
+          "curl_exit": 0,
+          "reason": "passed"
+        }
+      ],
+      "average_seconds": 1.1886,
+      "download": {
+        "target": "download",
+        "ok": true,
+        "http": 200,
+        "proxy_http": 0,
+        "seconds": 2.0974,
+        "bytes": 262144,
+        "kib_per_second": 122.06,
+        "curl_exit": 0,
+        "reason": "passed"
+      },
+      "reason": "passed"
+    },
+    {
+      "name": "[机房] 越南 承天顺化省 顺化 | SOCKS5 | 116.98.61.14:5001",
+      "server": "116.98.61.14",
+      "port": 5001,
+      "passed": true,
+      "successes": 6,
+      "attempts": 6,
+      "samples": [
+        {
+          "target": "google",
+          "ok": true,
+          "http": 204,
+          "proxy_http": 0,
+          "seconds": 1.132,
+          "bytes": 0,
+          "kib_per_second": 0.0,
+          "curl_exit": 0,
+          "reason": "passed"
+        },
+        {
+          "target": "cloudflare",
+          "ok": true,
+          "http": 200,
+          "proxy_http": 0,
+          "seconds": 1.1154,
+          "bytes": 213,
+          "kib_per_second": 0.19,
+          "curl_exit": 0,
+          "reason": "passed"
+        },
+        {
+          "target": "google",
+          "ok": true,
+          "http": 204,
+          "proxy_http": 0,
+          "seconds": 1.2013,
+          "bytes": 0,
+          "kib_per_second": 0.0,
+          "curl_exit": 0,
+          "reason": "passed"
+        },
+        {
+          "target": "cloudflare",
+          "ok": true,
+          "http": 200,
+          "proxy_http": 0,
+          "seconds": 1.2489,
+          "bytes": 207,
+          "kib_per_second": 0.16,
+          "curl_exit": 0,
+          "reason": "passed"
+        },
+        {
+          "target": "google",
+          "ok": true,
+          "http": 204,
+          "proxy_http": 0,
+          "seconds": 1.251,
+          "bytes": 0,
+          "kib_per_second": 0.0,
+          "curl_exit": 0,
+          "reason": "passed"
+        },
+        {
+          "target": "cloudflare",
+          "ok": true,
+          "http": 200,
+          "proxy_http": 0,
+          "seconds": 1.1554,
+          "bytes": 213,
+          "kib_per_second": 0.18,
+          "curl_exit": 0,
+          "reason": "passed"
+        }
+      ],
+      "average_seconds": 1.184,
+      "download": {
+        "target": "download",
+        "ok": true,
+        "http": 200,
+        "proxy_http": 0,
+        "seconds": 2.0477,
+        "bytes": 262144,
+        "kib_per_second": 125.02,
+        "curl_exit": 0,
+        "reason": "passed"
+      },
+      "reason": "passed"
+    },
+    {
+      "name": "[机房] 荷兰 北荷兰省 阿姆斯特丹 | SOCKS5 | 92.54.66.247:1080",
+      "server": "92.54.66.247",
+      "port": 1080,
       "passed": false,
       "successes": 0,
       "attempts": 1,
@@ -1164,14 +654,225 @@
           "ok": false,
           "http": 0,
           "proxy_http": 0,
-          "seconds": 0.3844,
+          "seconds": 4.0022,
           "bytes": 0,
           "kib_per_second": 0.0,
-          "curl_exit": 60,
-          "reason": "certificate_validation"
+          "curl_exit": 28,
+          "reason": "timeout"
         }
       ],
-      "reason": "certificate_validation"
+      "reason": "timeout"
+    },
+    {
+      "name": "[机房] 法国 普罗旺斯-阿尔卑斯-蓝色海岸大区 马赛 | HTTP | 91.92.241.169:3129",
+      "server": "91.92.241.169",
+      "port": 3129,
+      "passed": true,
+      "successes": 6,
+      "attempts": 6,
+      "samples": [
+        {
+          "target": "google",
+          "ok": true,
+          "http": 204,
+          "proxy_http": 200,
+          "seconds": 1.507,
+          "bytes": 0,
+          "kib_per_second": 0.0,
+          "curl_exit": 0,
+          "reason": "passed"
+        },
+        {
+          "target": "cloudflare",
+          "ok": true,
+          "http": 200,
+          "proxy_http": 200,
+          "seconds": 1.429,
+          "bytes": 207,
+          "kib_per_second": 0.14,
+          "curl_exit": 0,
+          "reason": "passed"
+        },
+        {
+          "target": "google",
+          "ok": true,
+          "http": 204,
+          "proxy_http": 200,
+          "seconds": 1.5769,
+          "bytes": 0,
+          "kib_per_second": 0.0,
+          "curl_exit": 0,
+          "reason": "passed"
+        },
+        {
+          "target": "cloudflare",
+          "ok": true,
+          "http": 200,
+          "proxy_http": 200,
+          "seconds": 1.6332,
+          "bytes": 207,
+          "kib_per_second": 0.12,
+          "curl_exit": 0,
+          "reason": "passed"
+        },
+        {
+          "target": "google",
+          "ok": true,
+          "http": 204,
+          "proxy_http": 200,
+          "seconds": 1.3618,
+          "bytes": 0,
+          "kib_per_second": 0.0,
+          "curl_exit": 0,
+          "reason": "passed"
+        },
+        {
+          "target": "cloudflare",
+          "ok": true,
+          "http": 200,
+          "proxy_http": 200,
+          "seconds": 1.4486,
+          "bytes": 207,
+          "kib_per_second": 0.14,
+          "curl_exit": 0,
+          "reason": "passed"
+        }
+      ],
+      "average_seconds": 1.4928,
+      "download": {
+        "target": "download",
+        "ok": true,
+        "http": 200,
+        "proxy_http": 200,
+        "seconds": 2.564,
+        "bytes": 262144,
+        "kib_per_second": 99.84,
+        "curl_exit": 0,
+        "reason": "passed"
+      },
+      "reason": "passed"
+    },
+    {
+      "name": "[机房] 委内瑞拉 米兰达州 圣特雷莎-德尔图伊 | HTTP | 190.114.242.154:999",
+      "server": "190.114.242.154",
+      "port": 999,
+      "passed": false,
+      "successes": 1,
+      "attempts": 2,
+      "samples": [
+        {
+          "target": "google",
+          "ok": true,
+          "http": 204,
+          "proxy_http": 200,
+          "seconds": 2.8549,
+          "bytes": 0,
+          "kib_per_second": 0.0,
+          "curl_exit": 0,
+          "reason": "passed"
+        },
+        {
+          "target": "cloudflare",
+          "ok": false,
+          "http": 0,
+          "proxy_http": 0,
+          "seconds": 4.0015,
+          "bytes": 0,
+          "kib_per_second": 0.0,
+          "curl_exit": 28,
+          "reason": "timeout"
+        }
+      ],
+      "reason": "timeout"
+    },
+    {
+      "name": "[机房] [原生IP] 美国 弗吉尼亚州 阿什本 — 亚马逊云 Aws | HTTP | 18.234.83.95:1001",
+      "server": "18.234.83.95",
+      "port": 1001,
+      "passed": true,
+      "successes": 6,
+      "attempts": 6,
+      "samples": [
+        {
+          "target": "google",
+          "ok": true,
+          "http": 204,
+          "proxy_http": 200,
+          "seconds": 0.2074,
+          "bytes": 0,
+          "kib_per_second": 0.0,
+          "curl_exit": 0,
+          "reason": "passed"
+        },
+        {
+          "target": "cloudflare",
+          "ok": true,
+          "http": 200,
+          "proxy_http": 200,
+          "seconds": 0.2085,
+          "bytes": 206,
+          "kib_per_second": 0.96,
+          "curl_exit": 0,
+          "reason": "passed"
+        },
+        {
+          "target": "google",
+          "ok": true,
+          "http": 204,
+          "proxy_http": 200,
+          "seconds": 0.2064,
+          "bytes": 0,
+          "kib_per_second": 0.0,
+          "curl_exit": 0,
+          "reason": "passed"
+        },
+        {
+          "target": "cloudflare",
+          "ok": true,
+          "http": 200,
+          "proxy_http": 200,
+          "seconds": 0.2265,
+          "bytes": 212,
+          "kib_per_second": 0.91,
+          "curl_exit": 0,
+          "reason": "passed"
+        },
+        {
+          "target": "google",
+          "ok": true,
+          "http": 204,
+          "proxy_http": 200,
+          "seconds": 0.2096,
+          "bytes": 0,
+          "kib_per_second": 0.0,
+          "curl_exit": 0,
+          "reason": "passed"
+        },
+        {
+          "target": "cloudflare",
+          "ok": true,
+          "http": 200,
+          "proxy_http": 200,
+          "seconds": 0.2096,
+          "bytes": 206,
+          "kib_per_second": 0.96,
+          "curl_exit": 0,
+          "reason": "passed"
+        }
+      ],
+      "average_seconds": 0.2113,
+      "download": {
+        "target": "download",
+        "ok": true,
+        "http": 200,
+        "proxy_http": 200,
+        "seconds": 0.4468,
+        "bytes": 262144,
+        "kib_per_second": 572.9,
+        "curl_exit": 0,
+        "reason": "passed"
+      },
+      "reason": "passed"
     },
     {
       "name": "[机房] 德国 黑森州 法兰克福 — 亚马逊云 Aws | HTTPS | 18.198.197.229:443",
@@ -1186,7 +887,7 @@
           "ok": false,
           "http": 0,
           "proxy_http": 0,
-          "seconds": 0.2437,
+          "seconds": 0.272,
           "bytes": 0,
           "kib_per_second": 0.0,
           "curl_exit": 60,
@@ -1208,7 +909,7 @@
           "ok": false,
           "http": 0,
           "proxy_http": 0,
-          "seconds": 0.241,
+          "seconds": 0.2714,
           "bytes": 0,
           "kib_per_second": 0.0,
           "curl_exit": 60,
@@ -1216,28 +917,6 @@
         }
       ],
       "reason": "certificate_validation"
-    },
-    {
-      "name": "[机房] 英国 英格兰 伦敦 — 亚马逊云 Aws | HTTPS | 35.179.34.132:443",
-      "server": "35.179.34.132",
-      "port": 443,
-      "passed": false,
-      "successes": 0,
-      "attempts": 1,
-      "samples": [
-        {
-          "target": "google",
-          "ok": false,
-          "http": 0,
-          "proxy_http": 0,
-          "seconds": 4.0026,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 28,
-          "reason": "timeout"
-        }
-      ],
-      "reason": "timeout"
     },
     {
       "name": "[机房] 马其顿 斯科普里市 斯科普里 | HTTPS | 203.12.28.18:9443",
@@ -1252,7 +931,7 @@
           "ok": false,
           "http": 0,
           "proxy_http": 0,
-          "seconds": 0.3197,
+          "seconds": 0.3362,
           "bytes": 0,
           "kib_per_second": 0.0,
           "curl_exit": 60,
@@ -1260,50 +939,6 @@
         }
       ],
       "reason": "certificate_validation"
-    },
-    {
-      "name": "[机房] 印度 马哈拉施特拉邦 浦那 — 微软云 Azure | HTTPS | 20.244.49.196:443",
-      "server": "20.244.49.196",
-      "port": 443,
-      "passed": false,
-      "successes": 0,
-      "attempts": 1,
-      "samples": [
-        {
-          "target": "google",
-          "ok": false,
-          "http": 0,
-          "proxy_http": 0,
-          "seconds": 4.0023,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 28,
-          "reason": "timeout"
-        }
-      ],
-      "reason": "timeout"
-    },
-    {
-      "name": "[机房] 英国 英格兰 伦敦 — 亚马逊云 Aws | HTTPS | 18.175.113.211:443",
-      "server": "18.175.113.211",
-      "port": 443,
-      "passed": false,
-      "successes": 0,
-      "attempts": 1,
-      "samples": [
-        {
-          "target": "google",
-          "ok": false,
-          "http": 0,
-          "proxy_http": 0,
-          "seconds": 4.0025,
-          "bytes": 0,
-          "kib_per_second": 0.0,
-          "curl_exit": 28,
-          "reason": "timeout"
-        }
-      ],
-      "reason": "timeout"
     },
     {
       "name": "[机房] [原生IP] 美国 弗吉尼亚州 华盛顿 — 微软云 Azure | HTTPS | 172.191.23.249:443",
@@ -1318,7 +953,29 @@
           "ok": false,
           "http": 0,
           "proxy_http": 0,
-          "seconds": 0.0709,
+          "seconds": 0.1137,
+          "bytes": 0,
+          "kib_per_second": 0.0,
+          "curl_exit": 60,
+          "reason": "certificate_validation"
+        }
+      ],
+      "reason": "certificate_validation"
+    },
+    {
+      "name": "[机房] 法国 法兰西岛大区 巴黎 — 亚马逊云 Aws | HTTPS | 15.236.122.197:443",
+      "server": "15.236.122.197",
+      "port": 443,
+      "passed": false,
+      "successes": 0,
+      "attempts": 1,
+      "samples": [
+        {
+          "target": "google",
+          "ok": false,
+          "http": 0,
+          "proxy_http": 0,
+          "seconds": 0.2673,
           "bytes": 0,
           "kib_per_second": 0.0,
           "curl_exit": 60,
@@ -1330,5 +987,5 @@
   ],
   "status": "passed",
   "source_records": 30,
-  "invalid_or_duplicate": 4
+  "invalid_or_duplicate": 14
 }
