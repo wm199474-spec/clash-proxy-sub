@@ -1,0 +1,49 @@
+name: 更新 Clash 订阅
+
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update_subscription.py'
+      - '.github/workflows/update-subscription.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: clash-subscription-updates
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: 设置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 抓取并转换代理
+        run: python scripts/update_subscription.py
+
+      - name: 保存订阅更新
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- clash.yaml proxy.txt
+          if git diff --cached --quiet; then
+            echo '代理列表没有变化'
+            exit 0
+          fi
+          git commit -m '更新代理列表和 Clash 订阅'
+          git push origin HEAD:main
